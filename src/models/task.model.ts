@@ -1,14 +1,4 @@
-export type TGroupedTasks = {
-  key: string;
-  label: string;
-  rows: Partial<TTask>[];
-}
-
-export type TTaskColumn = {
-  label: string;
-  key: string;
-}
-
+// src/models/task.model.ts
 
 export type TTask = {
   id: number;
@@ -23,4 +13,9 @@ export type TTask = {
     name: string;
     address: string;
   };
+};
+
+export type TTaskColumn = {
+  label: string;
+  key: string;
 };

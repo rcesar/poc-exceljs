@@ -8,10 +8,18 @@ Para instalar as dependências do projeto, utilize um dos gerenciadores de pacot
 
 ## Execução
 
-Após instalar as dependências, execute o script utilizando o comando:
+Após instalar as dependências, inicie o servidor da API utilizando o comando:
 
 ```bash
-npm run start
+npm run dev
 ```
 
-Este comando irá gerar um arquivo XLSX com os dados do relatório.
+Este comando irá iniciar a API Rest, que estara apta para receber requisições na URL:
+
+`http://localhost:3000/export`
+
+Parâmetros:
+
+- columns: referência as colunas que vão ser exibidas no relatório.
+- groupBy: usando algum elemento para agrupar as tarefas.
+- separateSheets: `boolean` que define se vai separar as planilhas por PDV ou não.

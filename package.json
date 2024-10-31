@@ -1,22 +1,31 @@
 {
   "name": "poc-exceljs",
   "version": "1.0.0",
-  "description": "",
+  "description": "POC de exportação de dados com Node.js e ExcelJS",
   "type": "module",
-  "main": "index.js",
+  "main": "src/server.ts",
   "scripts": {
-    "start": "tsx src/export.ts"
+    "start": "node dist/server.js",
+    "dev": "tsx watch src/server.ts",
+    "build": "tsc"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "Node.js",
+    "ExcelJS",
+    "API",
+    "Exportação"
+  ],
+  "author": "Adriano Carvalho",
   "license": "ISC",
   "packageManager": "pnpm@9.12.2+sha512.22721b3a11f81661ae1ec68ce1a7b879425a1ca5b991c975b074ac220b187ce56c708fe5db69f4c962c989452eee76c82877f4ee80f474cebd61ee13461b6228",
   "dependencies": {
     "exceljs": "^4.4.0",
+    "express": "^4.21.1",
     "lodash": "^4.17.21"
   },
   "devDependencies": {
     "@eslint/js": "^8.0.1",
+    "@types/express": "^5.0.0",
     "@types/lodash": "^4.17.13",
     "@types/node": "^22.8.5",
     "eslint": "^8.0.1",

@@ -1,40 +1,40 @@
-import { TTaskColumn } from "src/types/tasks";
+import { TTaskColumn } from "src/models/task.model";
 
-export default (): TTaskColumn[] => ([
+export default (): TTaskColumn[] => [
   {
-    label: 'ID',
-    key: 'id'
+    label: "ID",
+    key: "id",
   },
   {
-    label: 'Título',
-    key: 'title'
+    label: "Título",
+    key: "title",
   },
   {
-    label: 'Descrição',
-    key: 'description'
+    label: "Descrição",
+    key: "description",
   },
   {
-    label: 'Promotor',
-    key: 'promoterId'
+    label: "Promotor",
+    key: "promoterId",
   },
   {
-    label: 'Concluído',
-    key: 'completed'
+    label: "Concluído",
+    key: "completed",
   },
   {
-    label: 'Data de Vencimento',
-    key: 'dueDate'
+    label: "Data de Vencimento",
+    key: "dueDate",
   },
   {
-    label: 'Criado em',
-    key: 'createdAt'
+    label: "Criado em",
+    key: "createdAt",
   },
   {
-    label: 'PDV',
-    key: 'pdv.name'
+    label: "PDV",
+    key: "pdv.name",
   },
   {
-    label: 'Endereço',
-    key: 'pdv.address'
-  }
-])
+    label: "Endereço",
+    key: "pdv.address",
+  },
+];
